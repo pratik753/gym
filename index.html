@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Fitness</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSs reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(image/image1.jpg);
+        color: rgb(209, 223, 222);
+        box-sizing: border-box;
+        font-family: 'Baloo Bhai', cursive;
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+
+    }
+
+    .mid {
+        /* border: 2px solid red; */
+        display: block;
+        width: 58%;
+        margin: 20px auto;
+
+
+    }
+
+    .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        right: 23px;
+        top: 32px;
+    }
+
+    .nav {
+        display: inline;
+    }
+
+    .nav li {
+        display: inline;
+        font-size: 25px;
+    }
+
+
+    .nav li a {
+        color: rgb(133, 98, 133);
+        text-decoration: none;
+        padding: 17px;
+        margin: 3px;
+    }
+
+    .nav li a:hover,
+    .nav li a:active {
+        text-decoration: underline;
+        color: rgb(99, 99, 99);
+    }
+
+    .left img {
+        width: 78px;
+        filter: invert(100%);
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        background-color: rgb(60, 62, 60);
+        color: cornsilk;
+        margin: 4px 8px;
+        padding: 4px 9px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    div.left {
+        text-align: center;
+        line-height: 27px;
+        font-size: 22px;
+    }
+
+    div.container {
+        border: 2px solid honeydew;
+        margin: 101px 77px;
+        padding: 29px;
+        width: 43%;
+        border-radius: 37px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        padding: 2px;
+        margin: 7px auto;
+        width: 380px;
+        border: 2px solid rgb(80, 76, 76);
+        border-radius: 15px;
+        font-size: 22px;
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .container button {
+        width: 70%;
+        margin: 13px auto;
+        display: block;
+        padding: 4px;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="image/logo1.png" alt="">
+            <div>Pratik Fitness</div>
+
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best GYM of Muzaffarpur</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
